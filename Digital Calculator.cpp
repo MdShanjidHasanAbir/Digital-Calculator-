@@ -1,4 +1,7 @@
 Project Digital Calculator
+#include <iostream>
+#include <math.h>
+using namespace std;
 //find the average of n integer number.
 void average(void)
 {
@@ -90,8 +93,6 @@ cin>>arra2d[i][j];
 cout<<endl;
 }
 
-
-
 }
 cout <<"The matrix will be"<<endl;
 for(int i=0;i<row;i++)
@@ -104,10 +105,6 @@ cout<<endl;
 }}}
 
 //--------------------------------
-
-
-
-
 // find the factorial of a number.
 void factorial(void)
 {
@@ -128,6 +125,27 @@ factorial=factorial*x;
 cout<<"The factorial of "<< num << "(!)"<< "is="<<factorial;
 }
 }
+int main() {
+
+int dec,d;
+char op;
+float num1, num2;
+cout<<"chose your decision "<<endl;
+cout<<"1. Simple calculation"<<endl;
+cout<<"2. Vector"<<endl;
+cout<<"3. Matrix"<<endl;
+cin>>dec;
+switch(dec)
+{
+case 1:
+//------------------------------------------------------------------------------------------------------------------------------------
+{system("CLS");
+cout<<"1. Simple + - * /"<<endl;
+cout<<"2. Factorial "<<endl;
+cout<<"3. Average"<<endl;
+cin>>d;
+switch(d)
+{
 //simple calculation.
  case 1:
      system("CLS");
@@ -171,4 +189,30 @@ default:
 // If the operator is other than +, -, * or /, error message is shown
 cout << "Error! operator is not correct";
 break;
+}
+break;
+//for calculator +-.
+case 2:
+// factorial ------------------------
+factorial();
+break;
+case 3:
+// average-----------------
+average();
+break;
+}
+break;
+}
+break;
+case 2:
+vect();
+break;
+case 3:
+matri();
+break;
+}
+
+
+
+return 0;
 }
