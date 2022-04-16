@@ -1,5 +1,25 @@
 Project Digital Calculator
-
+// find the factorial of a number.
+void factorial(void)
+{
+system("CLS");
+int num,factorial=1;
+cout<<"Enter the number = ";
+cin>>num ;
+if(num<0)
+cout<<"Math erorr";
+else if (num<=1)
+cout<<"The factorial of "<<num<<"! ="<<factorial;
+else
+{
+for(int x= num; x >= 2; x--)
+{
+factorial=factorial*x;
+}
+cout<<"The factorial of "<< num << "(!)"<< "is="<<factorial;
+}
+}
+//simple calculation.
  case 1:
      system("CLS");
     //----------------------------------------------------------------------------------------------c1
