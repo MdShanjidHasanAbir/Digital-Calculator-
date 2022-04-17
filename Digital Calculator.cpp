@@ -2,6 +2,7 @@ Project Digital Calculator
 #include <iostream>
 #include <math.h>
 using namespace std;
+//...................................................
 //find the average of n integer number.
 void average(void)
 {
@@ -25,12 +26,9 @@ sum+=arra[i];
 cout<<"The average is : "<<sum/n;
 }
 }
-//=------------------------------ my part
+//=------------------------------
 
-//vector
-
-
-
+//vector.................................................
 void vect(void)
 {
 
@@ -76,7 +74,7 @@ cout<<"Can't calculate "<<endl;
 break;
 }
 }
-//matrix
+//matrix .....................................................
 void matri(void)
 {
 
@@ -125,6 +123,7 @@ factorial=factorial*x;
 cout<<"The factorial of "<< num << "(!)"<< "is="<<factorial;
 }
 }
+//..............................................................
 int main() {
 
 int dec,d;
@@ -190,6 +189,7 @@ default:
 cout << "Error! operator is not correct";
 break;
 }
+  //...............................................................................
 break;
 //for calculator +-.
 case 2:
