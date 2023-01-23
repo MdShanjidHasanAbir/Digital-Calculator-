@@ -1,6 +1,7 @@
 Project Digital Calculator
 #include <iostream>
 #include <math.h>
+ #include <cstdlib>
 using namespace std;
 //...................................................
 //find the average of n integer number.
